@@ -41,6 +41,7 @@
                 src="{{ $cover.Permalink }}"
                 sizes="(min-width: 768px) 720px, 100vw"
                 width="{{ $cover.Width }}" height="{{ $cover.Height }}"
+                style="height:300px;object-fit:contain;"
                 alt="{{ $alt }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
             <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
